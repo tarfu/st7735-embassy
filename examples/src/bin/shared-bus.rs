@@ -10,7 +10,7 @@ use embassy::executor::Spawner;
 use embassy::mutex::Mutex;
 use embassy::time::{Delay, Duration, Timer};
 use embassy::util::Forever;
-use embassy_embedded_hal::shared_bus::spi::SpiBusDevice;
+use embassy_embedded_hal::shared_bus::asynch::spi::SpiBusDevice;
 use embassy_nrf::gpio::{Level, Output, OutputDrive};
 use embassy_nrf::{
     interrupt,
